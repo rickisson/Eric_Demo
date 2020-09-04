@@ -1,0 +1,56 @@
+
+<DOCTYPE html>
+    <html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <style>
+
+            .flex-container {  /* selector for properties of the main flex box*/
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center; /* positions flex box at center*/
+                align-content: center;
+                margin: 450px;
+                border-length: 200px;
+            }
+
+
+            .flex-container > div {
+                margin: 5px;
+                padding: 20px;
+                font-size: 30px;
+                height: 70px;     /*height of flex items set to 70 */
+                width: 70px;      /*width of box set to 70*/
+                text-align: center;
+
+
+            }
+
+        </style>
+        </head>
+        <body>
+
+
+
+
+         <!--use of <div> element to give the flex boxes differnt individual colors-->
+         <div>
+         <div class="flex-container">
+
+            <div style="background-color:olivedrab"></div>
+            <div style="background-color:green"></div>
+            <div style="background-color:orange"></div>
+            <div style="background-color: purple"></div>
+            <div style="background-color:grey"></div>
+            <div style="background-color:deeppink"></div>
+            <div style="background-color:deepskyblue"></div>
+            <div style="background-color:red"></div>
+            <div style="background-color:blue"></div>
+             <h1 style="text-align:center;">COLOR GRID</h1>
+
+         </div>
+        </div>
+
+        </body>
+    </html>
