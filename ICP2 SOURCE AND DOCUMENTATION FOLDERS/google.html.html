@@ -1,0 +1,86 @@
+
+<DOCTYPE html>
+  <html>
+    <head>
+      <link href="style.css" type="text/css" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <style>
+                      /* flex box to create the parent container for the tabs*/
+
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content:center;
+          align-content: center;
+        }
+
+                        /* flex box with the properties for the recently opened pages*/
+        .flex-container > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 12px;
+          text-align: center;
+          line-height: 80px;
+          font-size: 15px;
+          flex-wrap: wrap;
+        }
+      </style>
+    </head>
+    <body>
+
+      <ul id="nav-bar">
+        <li><a href="#" class="nav-bar-opacity">Gmail</a></li>
+        <li><a href="#" class="nav-bar-opacity">Images</a></li>
+        <li><a href="#"><div id="menu-icon" class="nav-bar-opacity"></div></a></li>
+        <i class="material-icons" style="color:blue">notifications</i>           <!------notifications icon---->
+        <i class="material-icons" style="color:red;font-size:48px">portrait</i>  <!----image icon---->
+      </ul>
+
+      <div class="main-content">
+        <div id="logo">
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
+        <div id="search-bar">
+          <input type="text" name="search">
+          <a href="#" id="speech-link"><img src="https://lh5.googleusercontent.com/OorCLDb2xlVQ4P2MDNCiwAnpv0K1ZrcDwEwRS3sOfDMrnYTnVPvCh7WtFQMbZ_S9u_jzcSLd8g=s128-h128-e365" alt="Speech icon"></a>
+        </div>
+        <div class="buttons">
+          <button name="Google-Search"><p>Google Search</p></button>
+          <button name="Feeling-Lucky"><p>I'm Feeling Lucky</p></button>
+        </div>
+        <!-----------Flex box container to create tabs for recently visited pages on google--------->
+
+        <div class="flex-container">
+          <div>mail</div>
+          <div>umkc</div>
+          <div>chegg</div>
+          <div>nba</div>
+          <div>chase</div>
+          <div>ng</div>
+          <div>amc</div>
+          <div>css</div>
+          <div>php</div>
+        </div>
+      </div>
+
+
+
+    </body>
+    <footer>
+      <!------footer tabs at th bottom of page------->
+      <div class="bottom-nav">
+        <ul class="ul-left">
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="ul-right">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+
+        </ul>
+      </div>
+    </footer>
+  </html>
