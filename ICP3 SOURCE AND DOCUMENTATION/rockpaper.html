@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock paper scissors</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <!---- initializing fontawesome icos--->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+ <!---adding bootstrap libraries to document------>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+
+    <style>
+        body{        /*initializing flex box for game tabs*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+    <script src="rockpaper.js"></script>
+</head>
+<body>
+
+      <h1>ROCK * PAPER * SCISSORS</h1>
+
+      <p>select to play</p>
+      <p>Rock breaks scissors,scissors cuts paper,paper cuts rock</p>
+
+      <div class="score">
+      </div>
+      <div class="message">
+      </div>
+<!-----button representing rock paper scissors---->
+    <button type="button"><i class="far fa-hand-paper" style="font-size:48px;color:#ff0000"></i></button>
+    <button type="button"><i class="far fa-hand-rock" style="font-size: 48px;color:blue"></i></button>
+    <button type="button"><i class="far fa-hand-scissors"style="font-size:48px;color:yellow" ></i></button>
+<!----adding javascript file to html------>
+      <script type="text/javascript" src="rockpaper.js"></script>
+ </body>
+
+</html>
