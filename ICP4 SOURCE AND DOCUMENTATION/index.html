@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Github User Finder</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <h1>Find Me!</h1>
+</header>
+<div id="container">
+    <div class="search">
+        <input id="username" placeholder="enter a github username..." type="text"></input>
+    </div>
+<!---ceating error block for unknown user------>
+    <div id="error">
+        <h2 style="color: red">Error!: &nbsp; &nbsp;<span id="errorId"></span></h2>
+    </div>
+
+    <div id="profile">
+
+        <h2>User: &nbsp; &nbsp;<span id="userId"></span></h2>
+
+        <div class="avatar" >
+            <h2> <strong>Avatar: &nbsp; &nbsp; </strong> <span id="avatar_url"></span> </h2>
+
+        </div>
+        <div class="information"></div>
+        <div class="avatar"></div>
+<!---adding user information to display from API--->
+        <h2> <strong>location: &nbsp; &nbsp;</strong> <span id ="location"></span> </h2>
+        <h2> <strong>followers_url: &nbsp; &nbsp;</strong> <span id ="followers_url"></span> </h2>
+    </div>
+</div>
+
+</body>
+</html>
