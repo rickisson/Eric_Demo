@@ -1,0 +1,29 @@
+td{
+  background: lightblue;
+  padding: 5px;
+}
+
+th{
+  background: darkorchid;
+  color: white;
+  padding:5px;
+}
+
+button{
+  background: red;
+  color: white;
+  padding: 5px
+}
+
+input{
+  background:aliceblue;
+}
+#id{
+  background: green;
+}
+
+div{
+  background:cornflowerblue;
+  padding:20px;
+  width:17%;
+}

@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+ <div>
+   <!--countdown timer template set to time to countdown from-->
+   <countdown #cd1 [config]="{leftTime: 99999987655}"></countdown>
+   <br><br>
+   <button (click)="cd1.pause()" class="btn btn-link btn-sm">pause</button>
+   <button (click)="cd1.resume()" class="btn btn-link btn-sm">resume</button>
+   <button (click)="cd1.stop()" class="btn btn-link btn-sm">stop</button>
+   <button (click)="cd1.restart()" class="btn btn-link btn-sm">restart</button>
+ </div>
+<input type ="text" #newTodo />
+<!--button to add any user events or tasks to be done-->
+<button (click)="addTodo(newTodo.value); newTodo.value=''">Add</button>
+<table>
+ <tr>
+   <th>Label</th>
+   <th>Priority</th>
+   <th>Done</th>
+   <th>Actions</th>
+ </tr>
+ <tr *ngFor="let todo of todos"> <!--ngFor directive to loop through items in array-->
+   <td>{{todo.label}}</td>
+   <td>{{todo.priority}}</td>
+   <td>{{todo.done? '&#10003;': '&#10005;'}}</td>
+   <td>  <!--button to delete events that are to be removed from to do list items-->
+     <button (click)= "deleteTodo(todo)" >delete</button>
+   </td>
+ </tr>
+</table>
+
